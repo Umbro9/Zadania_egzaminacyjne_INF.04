@@ -17,8 +17,8 @@ const App = () => {
       <h2>Zwierzęta do adopcji</h2>
       <div className="d-flex flex-wrap gap-3">
       {zwierzeta.map((zwierze) =>(
-        <div className="card rounded" key={zwierze.id}>
-          {/* <img src={`assets/2025/${zwierze.plik}`} style={{margin:'5px',width: 'calc(100% - 10px)'}} alt={`${zwierze.nazwa}`}/> */}
+        <div className="card " key={zwierze.id}>
+          <img src={`assets/2025/${zwierze.plik}`} className='rounded' style={{margin:'5px',width: 'calc(100% - 10px)'}} alt={`${zwierze.nazwa}`}/>
           <div className='card-body'>
           <h4>{zwierze.nazwa}</h4>
           <button className='btn btn-success' type="button" onClick={() => console.log(`Wybrano: ${zwierze.nazwa}`)}>Wybierz</button>
